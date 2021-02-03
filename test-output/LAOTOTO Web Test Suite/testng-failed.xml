@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="6" parallel="tests" name="Failed suite [LAOTOTO Web Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="6" parallel="methods" name="Login Page Test - Firfox(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.konasl.evoting.tests.LoginTest">
+        <methods>
+          <include name="verifyLoginPageTitleTest"/>
+          <include name="tearDown"/>
+          <include name="doLoginTest"/>
+          <include name="verifyLoginPageHeaderTest"/>
+          <include name="setupTest"/>
+        </methods>
+      </class> <!-- com.konasl.evoting.tests.LoginTest -->
+    </classes>
+  </test> <!-- Login Page Test - Firfox(failed) -->
+  <test thread-count="6" parallel="methods" name="Login Page Test - chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.konasl.evoting.tests.LoginTest">
+        <methods>
+          <include name="verifyLoginPageTitleTest"/>
+          <include name="tearDown"/>
+          <include name="doLoginTest"/>
+          <include name="verifyLoginPageHeaderTest"/>
+          <include name="setupTest"/>
+        </methods>
+      </class> <!-- com.konasl.evoting.tests.LoginTest -->
+    </classes>
+  </test> <!-- Login Page Test - chrome(failed) -->
+</suite> <!-- Failed suite [LAOTOTO Web Test Suite] -->

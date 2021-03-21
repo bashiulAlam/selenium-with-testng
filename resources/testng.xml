@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="DFS | DMS Web Test Suite" thread-count="7"
+<suite name="DFS | DMS Web Test Suite" thread-count="1"
 	parallel="tests" verbose="1">
 
 
@@ -14,13 +14,14 @@
 	</test-->
 	
 	<test name="Balance Page Test - chrome" parallel="methods"
-		thread-count="7">
+		thread-count="1">
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.konasl.dfs.tests.BalanceTest" />
 		</classes>
 	</test>
-	
+
+	<!--
 	<test name="Balance Page Test - firefox" parallel="methods"
 		thread-count="7">
 		<parameter name="browser" value="firefox" />
@@ -28,6 +29,7 @@
 			<class name="com.konasl.dfs.tests.BalanceTest" />
 		</classes>
 	</test>
+	-->
 	
 	<!-- test name="DSO Management Page Test - chrome" parallel="methods"
 		thread-count="7">

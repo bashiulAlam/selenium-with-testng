@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -21,12 +22,8 @@ import com.konasl.dfs.pages.ReadExcelFile;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-/**
- * @author sazzad.mohon
- *
- */
 public class BaseTest {
-	WebDriver driver;
+	WebDriver driver = null;
 	public Page page;
 	
 	private String url = "";
@@ -40,11 +37,13 @@ public class BaseTest {
 	public void setupTest(String browser) {
 		if(browser.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
+			//System.setProperty("webdriver.chrome.driver", "D:\\Software\\Selenium\\chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 		
 		else if(browser.equals("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
+			//System.setProperty("webdriver.gecko.driver", "D:\\Software\\Selenium\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
 		else {

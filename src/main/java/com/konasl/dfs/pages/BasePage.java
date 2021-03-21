@@ -40,22 +40,13 @@ public class BasePage extends Page {
 
 	@Override
 	public void waitForElementPresent(By locator) {
-		try {
-			//wait.until(ExpectedConditions.presenceOfElementLocated(locator));
-			wait.until((Function<? super WebDriver, Object>) ExpectedConditions.presenceOfElementLocated(locator));
-		}catch(Exception e) {
-			System.out.println("some exception occured while waiting for the element "+locator.toString());
-		}
-		
+
 	}
 
 	@Override
 	public void waitForPageTitle(String title) {
-		try {
-			wait.until((Function<? super WebDriver, Object>) ExpectedConditions.titleContains(title));
-		}catch(Exception e) {
-			System.out.println("some exception occured while waiting for the title "+title);
-		}
+
 	}
+
 
 }

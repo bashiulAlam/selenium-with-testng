@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import java.util.function.Function;
+
 public class BasePage extends Page {
 
 	public BasePage(WebDriver driver) {
@@ -38,21 +40,13 @@ public class BasePage extends Page {
 
 	@Override
 	public void waitForElementPresent(By locator) {
-		try {
-			wait.until(ExpectedConditions.presenceOfElementLocated(locator));
-		}catch(Exception e) {
-			System.out.println("some exception occured while waiting for the element "+locator.toString());
-		}
-		
+
 	}
 
 	@Override
 	public void waitForPageTitle(String title) {
-		try {
-			wait.until(ExpectedConditions.titleContains(title));
-		}catch(Exception e) {
-			System.out.println("some exception occured while waiting for the title "+title);
-		}
+
 	}
+
 
 }

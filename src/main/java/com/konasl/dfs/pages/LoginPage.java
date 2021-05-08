@@ -9,10 +9,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-/**
- * @author sazzad.mohon
- *
- */
 public class LoginPage extends BasePage {
 	private By username = By.id("username");
 	private By password = By.id("password");

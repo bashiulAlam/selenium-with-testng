@@ -7,10 +7,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-/**
- * @author sazzad.mohon
- *
- */
 public class HomePage extends BasePage{
 	By checkBalanceBtn = By.xpath("/html/body/app-root/app-full-layout/div/div[1]/app-sidebar/div[2]/div/span/div");
 	By blanceContainerDiv = By.cssSelector("div.balance-check-box user-balance div");

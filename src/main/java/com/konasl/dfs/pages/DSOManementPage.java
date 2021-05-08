@@ -7,10 +7,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-/**
- * @author sazzad.mohon
- *
- */
 public class DSOManementPage extends BasePage{
 	
 	By searchDsoBtn = By.cssSelector(".sidebar-content > div.nav-container > ul > li.has-sub.open > ul > li:nth-child(1) > a");

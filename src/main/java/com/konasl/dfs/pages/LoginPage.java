@@ -4,8 +4,10 @@
 package com.konasl.dfs.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 /**
  * @author sazzad.mohon
@@ -90,6 +92,9 @@ public class LoginPage extends BasePage {
 		getUserName().sendKeys(username);
 		getPassword().sendKeys(password);
 		getLoginbtn().click();
+
+		Actions actionObject = new Actions(driver);
+		actionObject.keyDown(Keys.CONTROL).sendKeys(Keys.F5).keyUp(Keys.CONTROL).perform();
 		
 		// Return next landing page class object
 		return getInstance(HomePage.class);
@@ -120,10 +125,6 @@ public class LoginPage extends BasePage {
 	public void doLogout() {
 		getLogoutWrapperBtn().click();
 		getLogoutBtn().click();
-		getLoginWrappertBtn().click();
+		//getLoginWrappertBtn().click();
 	}
-	
-	
-
-	
 }

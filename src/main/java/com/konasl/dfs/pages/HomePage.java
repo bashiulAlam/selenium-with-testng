@@ -43,12 +43,12 @@ public class HomePage extends BasePage{
 	}
 	
 	
-	public DSOManementPage openDsoManagementPage() {
+	public DSOManagementPage openDsoManagementPage() {
 		
 		getDsoManagementBtn().click();
 		
 		// Return next landing page class object
-		return getInstance(DSOManementPage.class);
+		return getInstance(DSOManagementPage.class);
 	}
 	
     

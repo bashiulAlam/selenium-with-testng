@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/EVoting.iml" filepath="$PROJECT_DIR$/EVoting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DFS.iml" filepath="$PROJECT_DIR$/DFS.iml" />
     </modules>
   </component>
 </project>

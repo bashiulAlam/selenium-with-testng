@@ -7,7 +7,9 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -20,6 +22,7 @@ import com.konasl.dfs.pages.Page;
 import com.konasl.dfs.pages.ReadExcelFile;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import sun.security.krb5.internal.crypto.Des;
 
 /**
  * @author sazzad.mohon
@@ -39,8 +42,14 @@ public class BaseTest {
 	@Parameters(value= {"browser"})
 	public void setupTest(String browser) {
 		if(browser.equals("chrome")) {
+			/*DesiredCapabilities desiredCapabilities = DesiredCapabilities.chrome();
+			ChromeOptions chromeOptions = new ChromeOptions();
+			chromeOptions.addArguments("incognito");
+			desiredCapabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);*/
+
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
+			driver.manage().window().maximize();
 		}
 		
 		else if(browser.equals("firefox")) {

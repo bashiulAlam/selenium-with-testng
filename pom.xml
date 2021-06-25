@@ -5,13 +5,14 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>EVoting</groupId>
-	<artifactId>EVoting</artifactId>
+	<groupId>Assignment</groupId>
+	<artifactId>Assignment</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-	<name>DFS</name>
-	<!-- FIXME change it to the project's website -->
+	<name>Assignment</name>
+	<!--
 	<url>http://www.example.com</url>
+	-->
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -78,11 +79,18 @@
 			<artifactId>selenium-java</artifactId>
 			<version>3.14.0</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>7.4.0</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.13.1</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -92,14 +100,12 @@
 			<version>4.3.1</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
 			<version>4.1.2</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml</artifactId>

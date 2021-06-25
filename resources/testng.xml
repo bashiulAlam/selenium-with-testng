@@ -1,54 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="DFS | System Portal Web Test Suite" thread-count="7"
-	parallel="tests" verbose="1">
+<suite name="Assignment" thread-count="1"
+       parallel="tests" verbose="1">
 
-<!--
-	<test name="Login Page Test - Chrome" parallel="methods"
-		thread-count="1">
-		<parameter name="browser" value="chrome" />
-		<classes>
-			<class name="com.konasl.dfs.tests.DSOManagementTest" />
-		</classes>
-	</test>
+    <test name="Facebook Test - chrome" parallel="methods"
+          thread-count="1">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.assignment.tests.FacebookTest"/>
+        </classes>
+    </test>
 
-
-	<test name="Regression Test - Chrome" parallel="methods"
-		  thread-count="1">
-		<parameter name="browser" value="chrome" />
-		<classes>
-			<class name="com.konasl.dfs.tests.MerchantManagementTest" />
-		</classes>
-	</test>
--->
-
-            <test name="Balance Page Test - chrome" parallel="methods"
-                thread-count="1">
-                <parameter name="browser" value="chrome" />
-                <classes>
-                    <class name="com.konasl.dfs.tests.BalanceTest" />
-                </classes>
-            </test>
-
-	<!--
+    <!--
             <test name="Balance Page Test - firefox" parallel="methods"
                 thread-count="1">
                 <parameter name="browser" value="firefox" />
                 <classes>
-                    <class name="com.konasl.dfs.tests.BalanceTest" />
+                    <class name="BalanceTest" />
                 </classes>
             </test>
-
-            <test name="DSO Management Page Test - chrome" parallel="methods"
-                thread-count="7">
-                <parameter name="browser" value="chrome" />
-                <classes>
-                    <class name="com.konasl.dfs.tests.DSOManagementTest" />
-                </classes>
-            </test-->
-
-	
-
+-->
 
 </suite>

@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class FacebookTest extends BaseTest {
 
-    public FacebookTest(String url) {
+    public FacebookTest() {
         super(Constants.FACEBOOK_URL);
     }
 
@@ -20,7 +20,7 @@ public class FacebookTest extends BaseTest {
 
     @Test(priority = 0)
     public void login() {
-        page.getInstance(FacebookPage.class).login(Constants.USER_EMAIL, Constants.PASSWORD);
+        page.getInstance(FacebookPage.class).login(Constants.FACEBOOK_USER_EMAIL, Constants.FACEBOOK_PASSWORD);
     }
 
     @Test(priority = 1, dependsOnMethods = {"login"})

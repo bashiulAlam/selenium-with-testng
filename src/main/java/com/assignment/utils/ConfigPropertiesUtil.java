@@ -9,22 +9,34 @@ public class ConfigPropertiesUtil {
 
     public static String POST_TEXT;
 
-    public static String USER_EMAIL;
-    public static String PASSWORD;
+    public static String FACEBOOK_USER_EMAIL;
+    public static String FACEBOOK_PASSWORD;
 
     //test insurance company assignment variables
     public static String TEST_INSURANCE_COMPANY_URL;
+
+    public static String INSURANCE_USER_EMAIL;
+    public static String INSURANCE_PASSWORD;
+    public static String INSURANCE_USERNAME;
+
+    public static String RATING;
+    public static String REVIEW;
 
     public interface ConfigElements {
         //facebook elements
         static final String GOOGLE_URL = "GOOGLE";
         static final String FACEBOOK_URL = "FACEBOOK";
         static final String POST_TEXT = "POST_TEXT";
-        static final String USER_EMAIL = "USER_EMAIL";
-        static final String PASSWORD = "PASSWORD";
+        static final String FACEBOOK_USER_EMAIL = "FACEBOOK_USER_EMAIL";
+        static final String FACEBOOK_PASSWORD = "FACEBOOK_PASSWORD";
 
         //test insurance company elements
-        static final String TEST_INSURANCE_COMPANY_URL = "TEST_INSURANCE_COMPANY_URL";
+        static final String TEST_INSURANCE_COMPANY_URL = "TEST_INSURANCE_COMPANY";
+        static final String INSURANCE_USER_EMAIL = "INSURANCE_USER_EMAIL";
+        static final String INSURANCE_PASSWORD = "INSURANCE_PASSWORD";
+        static final String INSURANCE_USERNAME = "INSURANCE_USERNAME";
+        static final String REVIEW = "REVIEW";
+        static final String RATING = "RATING";
     }
 
     static {
@@ -35,10 +47,15 @@ public class ConfigPropertiesUtil {
         GOOGLE_URL = configProperties.getProperty(ConfigElements.GOOGLE_URL);
         FACEBOOK_URL = configProperties.getProperty(ConfigElements.FACEBOOK_URL);
         POST_TEXT = configProperties.getProperty(ConfigElements.POST_TEXT);
-        USER_EMAIL = configProperties.getProperty(ConfigElements.USER_EMAIL);
-        PASSWORD = configProperties.getProperty(ConfigElements.PASSWORD);
+        FACEBOOK_USER_EMAIL = configProperties.getProperty(ConfigElements.FACEBOOK_USER_EMAIL);
+        FACEBOOK_PASSWORD = configProperties.getProperty(ConfigElements.FACEBOOK_PASSWORD);
 
         //assign test insurance company assignment variables
         TEST_INSURANCE_COMPANY_URL = configProperties.getProperty(ConfigElements.TEST_INSURANCE_COMPANY_URL);
+        INSURANCE_USER_EMAIL = configProperties.getProperty(ConfigElements.INSURANCE_USER_EMAIL);
+        INSURANCE_PASSWORD = configProperties.getProperty(ConfigElements.INSURANCE_PASSWORD);
+        INSURANCE_USERNAME = configProperties.getProperty(ConfigElements.INSURANCE_USERNAME);
+        REVIEW = configProperties.getProperty(ConfigElements.REVIEW);
+        RATING = configProperties.getProperty(ConfigElements.RATING);
     }
 }

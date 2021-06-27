@@ -18,6 +18,7 @@ public class ConfigPropertiesUtil {
     public static String INSURANCE_USER_EMAIL;
     public static String INSURANCE_PASSWORD;
     public static String INSURANCE_USERNAME;
+    public static String INSURANCE_USER_FIRST_NAME;
 
     public static String RATING;
     public static String REVIEW;
@@ -35,6 +36,7 @@ public class ConfigPropertiesUtil {
         static final String INSURANCE_USER_EMAIL = "INSURANCE_USER_EMAIL";
         static final String INSURANCE_PASSWORD = "INSURANCE_PASSWORD";
         static final String INSURANCE_USERNAME = "INSURANCE_USERNAME";
+        static final String INSURANCE_USER_FIRST_NAME = "INSURANCE_USER_FIRST_NAME";
         static final String REVIEW = "REVIEW";
         static final String RATING = "RATING";
     }
@@ -55,6 +57,7 @@ public class ConfigPropertiesUtil {
         INSURANCE_USER_EMAIL = configProperties.getProperty(ConfigElements.INSURANCE_USER_EMAIL);
         INSURANCE_PASSWORD = configProperties.getProperty(ConfigElements.INSURANCE_PASSWORD);
         INSURANCE_USERNAME = configProperties.getProperty(ConfigElements.INSURANCE_USERNAME);
+        INSURANCE_USER_FIRST_NAME = configProperties.getProperty(ConfigElements.INSURANCE_USER_FIRST_NAME);
         REVIEW = configProperties.getProperty(ConfigElements.REVIEW);
         RATING = configProperties.getProperty(ConfigElements.RATING);
     }

@@ -11,6 +11,7 @@ public class Constants {
     public static final String INSURANCE_USER_EMAIL = ConfigPropertiesUtil.INSURANCE_USER_EMAIL;
     public static final String INSURANCE_PASSWORD = ConfigPropertiesUtil.INSURANCE_PASSWORD;
     public static final String INSURANCE_USERNAME = ConfigPropertiesUtil.INSURANCE_USERNAME;
+    public static final String INSURANCE_USER_FIRST_NAME = ConfigPropertiesUtil.INSURANCE_USER_FIRST_NAME;
 
     public static final String STATUS_MESSAGE = ConfigPropertiesUtil.POST_TEXT;
 
@@ -25,4 +26,5 @@ public class Constants {
     }
 
     public static final String REVIEW_SUCCESS_MESSAGE = "Your review has been posted.";
+    public static final String INSURANCE_COMPANY_NAME = "Test Insurance Company";
 }

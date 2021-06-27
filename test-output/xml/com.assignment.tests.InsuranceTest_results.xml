@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Insurance Test - chrome"
+           tests="5"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="22.217">
+    <properties></properties>
+
+
+
+            <testcase
+                name="Test_001_landingPageTitleCheck"
+                time="0.014"
+                classname="com.assignment.tests.InsuranceTest">
+            </testcase>
+            <testcase
+                name="Test_005_verifyReviewFromProfile"
+                time="1.979"
+                classname="com.assignment.tests.InsuranceTest">
+            </testcase>
+            <testcase
+                name="Test_002_login"
+                time="8.351"
+                classname="com.assignment.tests.InsuranceTest">
+            </testcase>
+            <testcase
+                name="Test_004_verifyReviewFeed"
+                time="3.133"
+                classname="com.assignment.tests.InsuranceTest">
+            </testcase>
+            <testcase
+                name="Test_003_postRatingAndReview"
+                time="8.740"
+                classname="com.assignment.tests.InsuranceTest">
+            </testcase>
+</testsuite>

@@ -71,5 +71,10 @@
     <orderEntry type="library" scope="TEST" name="Maven: log4j:log4j:1.2.17" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.5.13" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.seleniumhq.selenium:selenium-remote-driver:4.0.0-alpha-1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.testng:reportng:1.2.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.freemarker:freemarker:2.3.28" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.google.inject:guice:4.2.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: javax.inject:javax.inject:1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: aopalliance:aopalliance:1.0" level="project" />
   </component>
 </module>

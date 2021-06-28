@@ -26,8 +26,11 @@ public class FacebookTest extends BaseTest {
     @Test(priority = 1, dependsOnMethods = {"login"})
     public void postStatusMessage() throws InterruptedException {
         page.getInstance(FacebookPage.class).postStatusMessage(Constants.STATUS_MESSAGE);
-        //page.getInstance(FacebookPage.class).openProfile();
-        //String post = page.getInstance(FacebookPage.class).getPostText();
-        //System.out.println("Facebook latest post : " + post);
+        Thread.sleep(3000);
+        /*page.getInstance(FacebookPage.class).openProfile();
+        Thread.sleep(5000);
+        String post = page.getInstance(FacebookPage.class).getPostText();
+        System.out.println("Facebook last post : " + post);*/
+        Assert.assertTrue(page.getInstance(FacebookPage.class).checkPostInHomePage());
     }
 }

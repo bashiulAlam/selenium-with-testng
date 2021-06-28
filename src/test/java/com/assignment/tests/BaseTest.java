@@ -8,10 +8,15 @@ import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import com.assignment.pages.Page;
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
@@ -51,8 +56,13 @@ public class BaseTest {
 		}
 		
 		else if(browser.equals("firefox")) {
+			//FirefoxOptions options = new FirefoxOptions();
+			//options.addPreference("dom.webnotifications.enabled", false);
+			//driver = new RemoteWebDriver(options);
+
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
+			driver.manage().window().maximize();
 		}
 		else {
 			System.out.println("No Browser is Defined in xml");

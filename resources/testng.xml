@@ -3,21 +3,22 @@
 
 <suite name="Assignment" thread-count="1"
        parallel="tests" verbose="1">
-<!--
-    <test name="Facebook Test - chrome" parallel="methods"
+
+    <test name="Facebook Test - firefox" parallel="methods"
           thread-count="1">
         <parameter name="browser" value="chrome"/>
         <classes>
             <class name="com.assignment.tests.FacebookTest"/>
         </classes>
     </test>
--->
+
+    <!--
     <test name="Insurance Test - chrome" parallel="methods"
           thread-count="1">
         <parameter name="browser" value="chrome"/>
         <classes>
             <class name="com.assignment.tests.InsuranceTest"/>
         </classes>
-    </test>
+    </test> -->
 
 </suite>

@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.assignment.tests;
 
 import java.util.HashMap;
@@ -17,6 +14,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
@@ -53,19 +51,8 @@ public class BaseTest {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(options);
 			driver.manage().window().maximize();
-		}
-		
-		else if(browser.equals("firefox")) {
-			//FirefoxOptions options = new FirefoxOptions();
-			//options.addPreference("dom.webnotifications.enabled", false);
-			//driver = new RemoteWebDriver(options);
-
-			WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver();
-			driver.manage().window().maximize();
-		}
-		else {
-			System.out.println("No Browser is Defined in xml");
+		} else {
+			System.out.println("Browser is not defined in xml");
 		}
 		
 //		driver.manage().deleteAllCookies();

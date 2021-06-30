@@ -66,8 +66,8 @@ public class FacebookPage extends BasePage {
         clickPostBtn();
     }
 
-    public boolean checkPostInHomePage() {
-        return driver.findElement(By.xpath(postInHomePage.replace("{postText}", Constants.STATUS_MESSAGE))).isDisplayed();
+    public String checkPostInHomePage() {
+        return driver.findElement(By.xpath(postInHomePage.replace("{postText}", Constants.STATUS_MESSAGE))).getText();
     }
     //endregion
 

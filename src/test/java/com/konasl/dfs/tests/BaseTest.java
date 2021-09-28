@@ -24,10 +24,6 @@ import com.konasl.dfs.pages.ReadExcelFile;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import sun.security.krb5.internal.crypto.Des;
 
-/**
- * @author sazzad.mohon
- *
- */
 public class BaseTest {
 	WebDriver driver;
 	public Page page;

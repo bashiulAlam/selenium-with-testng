@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="E-Commerce Test - chrome"
+           tests="5"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="21.533">
+    <properties></properties>
+
+
+
+            <testcase
+                name="signOut"
+                time="2.379"
+                classname="com.assignment.tests.ECommerceTest">
+            </testcase>
+            <testcase
+                name="Test_001_signIn"
+                time="3.634"
+                classname="com.assignment.tests.ECommerceTest">
+            </testcase>
+            <testcase
+                name="Test_004_checkoutProcess"
+                time="6.679"
+                classname="com.assignment.tests.ECommerceTest">
+            </testcase>
+            <testcase
+                name="Test_002_searchProducts"
+                time="3.847"
+                classname="com.assignment.tests.ECommerceTest">
+            </testcase>
+            <testcase
+                name="Test_003_addItemToCart"
+                time="4.994"
+                classname="com.assignment.tests.ECommerceTest">
+            </testcase>
+</testsuite>

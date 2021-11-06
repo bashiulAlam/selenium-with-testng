@@ -4,19 +4,11 @@
 <suite name="Assignment" thread-count="1"
        parallel="tests" verbose="1">
 
-    <test name="Facebook Test" parallel="methods"
+    <test name="E-Commerce Test - chrome" parallel="methods"
           thread-count="1">
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="com.assignment.tests.FacebookTest"/>
-        </classes>
-    </test>
-
-    <test name="Insurance Test - chrome" parallel="methods"
-          thread-count="1">
-        <parameter name="browser" value="chrome"/>
-        <classes>
-            <class name="com.assignment.tests.InsuranceTest"/>
+            <class name="com.assignment.tests.ECommerceTest"/>
         </classes>
     </test>
 

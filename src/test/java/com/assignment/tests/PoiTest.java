@@ -48,13 +48,13 @@ public class PoiTest extends BaseTest {
     }
 
     @Test(priority = 1, dependsOnMethods = {"Test_001_openPoiUi"})
-    public void Test_004_checkEmbedContentWithLocationAndCategory() {
+    public void Test_004_checkEmbedContentWithLocationAndCategory() throws InterruptedException {
         page.getInstance(PoiPage.class).sendLocationText("Friedrichshain");
         Assert.assertTrue(page.getInstance(PoiPage.class).locationOptionsDisplayed() > 0);
 
         if (page.getInstance(PoiPage.class).locationOptionsDisplayed() > 0) {
             page.getInstance(PoiPage.class).clickSearchOption();
-            driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
+            Thread.sleep(3000);
             page.getInstance(PoiPage.class).clickOnVehicleCategory();
             String content = page.getInstance(PoiPage.class).getEmbedPopUpContent();
             System.out.println("Embed pop up content : " + content);

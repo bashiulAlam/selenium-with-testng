@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-26T21:43:24 BDT" name="POI Test Suite" finished-at="2022-08-26T21:44:03 BDT" duration-ms="39039">
+  <suite started-at="2022-08-26T21:49:19 BDT" name="POI Test Suite" finished-at="2022-08-26T21:50:05 BDT" duration-ms="46075">
     <groups>
     </groups>
-    <test started-at="2022-08-26T21:43:24 BDT" name="Test - Chrome" finished-at="2022-08-26T21:44:03 BDT" duration-ms="39039">
+    <test started-at="2022-08-26T21:49:19 BDT" name="Test - Chrome" finished-at="2022-08-26T21:50:05 BDT" duration-ms="46075">
       <class name="com.assignment.tests.PoiTest">
-        <test-method is-config="true" signature="setupTest(java.lang.String)[pri:0, instance:com.assignment.tests.PoiTest@701fc37a]" started-at="2022-08-26T21:43:24 BDT" name="setupTest" finished-at="2022-08-26T21:43:37 BDT" duration-ms="13626" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.String)[pri:0, instance:com.assignment.tests.PoiTest@21a947fe]" started-at="2022-08-26T21:49:19 BDT" name="setupTest" finished-at="2022-08-26T21:49:33 BDT" duration-ms="13852" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,23 +18,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Test_001_openPoiUi()[pri:0, instance:com.assignment.tests.PoiTest@701fc37a]" started-at="2022-08-26T21:43:37 BDT" name="Test_001_openPoiUi" finished-at="2022-08-26T21:43:39 BDT" duration-ms="2078" status="PASS">
+        <test-method signature="Test_001_openPoiUi()[pri:0, instance:com.assignment.tests.PoiTest@21a947fe]" started-at="2022-08-26T21:49:33 BDT" name="Test_001_openPoiUi" finished-at="2022-08-26T21:49:35 BDT" duration-ms="1575" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test_001_openPoiUi -->
-        <test-method signature="Test_002_checkEmbedContentWithNoLocation()[pri:1, instance:com.assignment.tests.PoiTest@701fc37a]" started-at="2022-08-26T21:43:39 BDT" name="Test_002_checkEmbedContentWithNoLocation" finished-at="2022-08-26T21:43:55 BDT" depends-on-methods="com.assignment.tests.PoiTest.Test_001_openPoiUi" duration-ms="15454" status="PASS">
+        <test-method signature="Test_002_checkEmbedContentWithNoLocation()[pri:1, instance:com.assignment.tests.PoiTest@21a947fe]" started-at="2022-08-26T21:49:35 BDT" name="Test_002_checkEmbedContentWithNoLocation" finished-at="2022-08-26T21:49:51 BDT" depends-on-methods="com.assignment.tests.PoiTest.Test_001_openPoiUi" duration-ms="16652" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test_002_checkEmbedContentWithNoLocation -->
-        <test-method signature="Test_003_checkEmbedContentWithLocationAndNoCategory()[pri:1, instance:com.assignment.tests.PoiTest@701fc37a]" started-at="2022-08-26T21:43:55 BDT" name="Test_003_checkEmbedContentWithLocationAndNoCategory" finished-at="2022-08-26T21:44:01 BDT" depends-on-methods="com.assignment.tests.PoiTest.Test_001_openPoiUi" duration-ms="5823" status="PASS">
+        <test-method signature="Test_003_checkEmbedContentWithLocationAndNoCategory()[pri:1, instance:com.assignment.tests.PoiTest@21a947fe]" started-at="2022-08-26T21:49:51 BDT" name="Test_003_checkEmbedContentWithLocationAndNoCategory" finished-at="2022-08-26T21:50:00 BDT" depends-on-methods="com.assignment.tests.PoiTest.Test_001_openPoiUi" duration-ms="8716" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test_003_checkEmbedContentWithLocationAndNoCategory -->
-        <test-method signature="Test_004_checkEmbedContentWithLocationAndCategory()[pri:1, instance:com.assignment.tests.PoiTest@701fc37a]" started-at="2022-08-26T21:44:01 BDT" name="Test_004_checkEmbedContentWithLocationAndCategory" finished-at="2022-08-26T21:44:03 BDT" depends-on-methods="com.assignment.tests.PoiTest.Test_001_openPoiUi" duration-ms="1806" status="PASS">
+        <test-method signature="Test_004_checkEmbedContentWithLocationAndCategory()[pri:1, instance:com.assignment.tests.PoiTest@21a947fe]" started-at="2022-08-26T21:50:00 BDT" name="Test_004_checkEmbedContentWithLocationAndCategory" finished-at="2022-08-26T21:50:05 BDT" depends-on-methods="com.assignment.tests.PoiTest.Test_001_openPoiUi" duration-ms="5024" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test_004_checkEmbedContentWithLocationAndCategory -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assignment.tests.PoiTest@701fc37a]" started-at="2022-08-26T21:44:03 BDT" name="tearDown" finished-at="2022-08-26T21:44:03 BDT" duration-ms="204" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assignment.tests.PoiTest@21a947fe]" started-at="2022-08-26T21:50:05 BDT" name="tearDown" finished-at="2022-08-26T21:50:05 BDT" duration-ms="213" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

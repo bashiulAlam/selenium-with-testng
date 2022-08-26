@@ -35,13 +35,7 @@ public class BaseTest {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
-		}
-		
-		else if(browser.equals("firefox")) {
-			WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver();
-		}
-		else {
+		} else {
 			System.out.println("No Browser is Defined in xml");
 		}
 

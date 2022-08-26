@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
 <title>TestNG Report</title>
@@ -7,26 +7,15 @@
 </head>
 <body>
 <table>
-<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">DFS | DMS Web Test Suite</th></tr>
-<tr><td><a href="#t0">Balance Page Test - chrome</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">25,675</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Balance Page Test - firefox</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">33,492</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num attn">1</th><th class="num">59,167</th><th colspan="2"></th></tr>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">POI Test Suite</th></tr>
+<tr><td><a href="#t0">Test - Chrome</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">39,039</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">DFS | DMS Web Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Balance Page Test - chrome &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.konasl.dfs.tests.BalanceTest</td><td><a href="#m0">checkBalance</a></td><td rowspan="1">1610344192961</td><td rowspan="1">7443</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Balance Page Test - firefox &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.konasl.dfs.tests.BalanceTest</td><td><a href="#m1">checkBalance</a></td><td rowspan="1">1610344199347</td><td rowspan="1">6916</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">POI Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test - Chrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.assignment.tests.PoiTest</td><td><a href="#m0">Test_001_openPoiUi</a></td><td rowspan="1">1661528617865</td><td rowspan="1">2078</td></tr><tr class="passedeven"><td><a href="#m1">Test_002_checkEmbedContentWithNoLocation</a></td><td rowspan="1">1661528619948</td><td rowspan="1">15454</td></tr><tr class="passedeven"><td><a href="#m2">Test_003_checkEmbedContentWithLocationAndNoCategory</a></td><td rowspan="1">1661528635403</td><td rowspan="1">5823</td></tr><tr class="passedeven"><td><a href="#m3">Test_004_checkEmbedContentWithLocationAndCategory</a></td><td rowspan="1">1661528641227</td><td rowspan="1">1806</td></tr></tbody>
 </table>
-<h2>Balance Page Test - chrome</h2><h3 id="m0">com.konasl.dfs.tests.BalanceTest#checkBalance</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>D0648</td><td>Konasl@123</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NumberFormatException: empty String
-	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1842)
-	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
-	at java.base/java.lang.Double.parseDouble(Double.java:549)
-	at com.konasl.dfs.pages.HomePage.getBalanceAmount(HomePage.java:62)
-	at com.konasl.dfs.pages.HomePage.checkBalance(HomePage.java:70)
-	at com.konasl.dfs.tests.BalanceTest.checkBalance(BalanceTest.java:21)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Balance Page Test - firefox</h2><h3 id="m1">com.konasl.dfs.tests.BalanceTest#checkBalance</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>D0648</td><td>Konasl@123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test - Chrome</h2><h3 id="m0">com.assignment.tests.PoiTest#Test_001_openPoiUi</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.assignment.tests.PoiTest#Test_002_checkEmbedContentWithNoLocation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.assignment.tests.PoiTest#Test_003_checkEmbedContentWithLocationAndNoCategory</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.assignment.tests.PoiTest#Test_004_checkEmbedContentWithLocationAndCategory</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

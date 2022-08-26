@@ -146,6 +146,12 @@
 			<version>4.0.0-alpha-1</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>reportng</artifactId>
+			<version>1.2.2</version>
+			<scope>test</scope>
+		</dependency>
 
 
 	</dependencies>

@@ -6,8 +6,8 @@
     <groups>
     </groups>
     <test started-at="2021-01-11T05:49:35Z" name="Balance Page Test - chrome" finished-at="2021-01-11T05:50:01Z" duration-ms="25675">
-      <class name="com.konasl.dfs.tests.BalanceTest">
-        <test-method is-config="true" signature="setupTest(java.lang.String)[pri:0, instance:com.konasl.dfs.tests.BalanceTest@13b6aecc]" started-at="2021-01-11T05:49:35Z" name="setupTest" finished-at="2021-01-11T05:49:52Z" duration-ms="16236" status="PASS">
+      <class name="BalanceTest">
+        <test-method is-config="true" signature="setupTest(java.lang.String)[pri:0, instance:BalanceTest@13b6aecc]" started-at="2021-01-11T05:49:35Z" name="setupTest" finished-at="2021-01-11T05:49:52Z" duration-ms="16236" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="checkBalance(java.lang.String, java.lang.String)[pri:1, instance:com.konasl.dfs.tests.BalanceTest@13b6aecc]" started-at="2021-01-11T05:49:52Z" name="checkBalance" data-provider="dmslogindata" finished-at="2021-01-11T05:50:00Z" duration-ms="7443" status="FAIL">
+        <test-method signature="checkBalance(java.lang.String, java.lang.String)[pri:1, instance:BalanceTest@13b6aecc]" started-at="2021-01-11T05:49:52Z" name="checkBalance" data-provider="dmslogindata" finished-at="2021-01-11T05:50:00Z" duration-ms="7443" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -36,13 +36,13 @@
               <![CDATA[empty String]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NumberFormatException: empty String
+                <![CDATA[java.lang.NumberFormatException: empty String
 at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1842)
 at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
 at java.base/java.lang.Double.parseDouble(Double.java:549)
-at com.konasl.dfs.pages.HomePage.getBalanceAmount(HomePage.java:62)
-at com.konasl.dfs.pages.HomePage.checkBalance(HomePage.java:70)
-at com.konasl.dfs.tests.BalanceTest.checkBalance(BalanceTest.java:21)
+at com.assignment.pages.HomePage.getBalanceAmount(HomePage.java:62)
+at com.assignment.pages.HomePage.checkBalance(HomePage.java:70)
+at BalanceTest.checkBalance(BalanceTest.java:21)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -62,15 +62,15 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkBalance -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.konasl.dfs.tests.BalanceTest@13b6aecc]" started-at="2021-01-11T05:50:00Z" name="tearDown" finished-at="2021-01-11T05:50:01Z" duration-ms="1195" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:BalanceTest@13b6aecc]" started-at="2021-01-11T05:50:00Z" name="tearDown" finished-at="2021-01-11T05:50:01Z" duration-ms="1195" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.konasl.dfs.tests.BalanceTest -->
+      </class> <!-- BalanceTest -->
     </test> <!-- Balance Page Test - chrome -->
     <test started-at="2021-01-11T05:49:35Z" name="Balance Page Test - firefox" finished-at="2021-01-11T05:50:09Z" duration-ms="33492">
-      <class name="com.konasl.dfs.tests.BalanceTest">
-        <test-method is-config="true" signature="setupTest(java.lang.String)[pri:0, instance:com.konasl.dfs.tests.BalanceTest@6ab778a]" started-at="2021-01-11T05:49:35Z" name="setupTest" finished-at="2021-01-11T05:49:59Z" duration-ms="23330" status="PASS">
+      <class name="BalanceTest">
+        <test-method is-config="true" signature="setupTest(java.lang.String)[pri:0, instance:BalanceTest@6ab778a]" started-at="2021-01-11T05:49:35Z" name="setupTest" finished-at="2021-01-11T05:49:59Z" duration-ms="23330" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -81,7 +81,7 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="checkBalance(java.lang.String, java.lang.String)[pri:1, instance:com.konasl.dfs.tests.BalanceTest@6ab778a]" started-at="2021-01-11T05:49:59Z" name="checkBalance" data-provider="dmslogindata" finished-at="2021-01-11T05:50:06Z" duration-ms="6916" status="PASS">
+        <test-method signature="checkBalance(java.lang.String, java.lang.String)[pri:1, instance:BalanceTest@6ab778a]" started-at="2021-01-11T05:49:59Z" name="checkBalance" data-provider="dmslogindata" finished-at="2021-01-11T05:50:06Z" duration-ms="6916" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -97,11 +97,11 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkBalance -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.konasl.dfs.tests.BalanceTest@6ab778a]" started-at="2021-01-11T05:50:06Z" name="tearDown" finished-at="2021-01-11T05:50:09Z" duration-ms="3160" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:BalanceTest@6ab778a]" started-at="2021-01-11T05:50:06Z" name="tearDown" finished-at="2021-01-11T05:50:09Z" duration-ms="3160" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.konasl.dfs.tests.BalanceTest -->
+      </class> <!-- BalanceTest -->
     </test> <!-- Balance Page Test - firefox -->
   </suite> <!-- DFS | DMS Web Test Suite -->
 </testng-results>

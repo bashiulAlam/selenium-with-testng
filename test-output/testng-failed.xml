@@ -4,13 +4,13 @@
   <test thread-count="7" parallel="methods" name="Balance Page Test - chrome(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.konasl.dfs.tests.BalanceTest">
+      <class name="BalanceTest">
         <methods>
           <include name="tearDown"/>
           <include name="setupTest"/>
           <include name="checkBalance" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.konasl.dfs.tests.BalanceTest -->
+      </class> <!-- BalanceTest -->
     </classes>
   </test> <!-- Balance Page Test - chrome(failed) -->
 </suite> <!-- Failed suite [DFS | DMS Web Test Suite] -->

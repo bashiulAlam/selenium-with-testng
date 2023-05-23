@@ -3,6 +3,7 @@ orbs:
   browser-tools: circleci/browser-tools@1.2.3
 jobs:
   build-and-test:
+    working_directory: ~/selenium-with-testng
     docker:
       - image: cimg/openjdk:11.0
       - image: cimg/node:17.1.0

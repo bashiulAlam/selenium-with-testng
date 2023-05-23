@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Login Page Test - Chrome"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="11.216">
+    <properties></properties>
+
+
+
+            <testcase
+                name="doLoginAndLogoutTest"
+                time="1.877"
+                classname="com.assignment.tests.LoginTest">
+            </testcase>
+            <testcase
+                name="doLoginAndLogoutTest"
+                time="0.991"
+                classname="com.assignment.tests.LoginTest">
+            </testcase>
+            <testcase
+                name="doLoginAndLogoutTest"
+                time="2.145"
+                classname="com.assignment.tests.LoginTest">
+            </testcase>
+            <testcase
+                name="doLoginAndLogoutTest"
+                time="6.203"
+                classname="com.assignment.tests.LoginTest">
+            </testcase>
+</testsuite>

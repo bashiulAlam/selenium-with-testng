@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class HomePage extends BasePage{
@@ -30,7 +31,7 @@ public class HomePage extends BasePage{
 	}
 
 	public void doLogout() {
-		WebDriverWait wait = new WebDriverWait(driver, 5);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.elementToBeClickable(getHamburgerIcon()));
 		getHamburgerIcon().click();
 		getLogoutOption().click();

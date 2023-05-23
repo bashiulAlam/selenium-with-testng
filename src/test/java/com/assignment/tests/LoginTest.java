@@ -18,21 +18,37 @@ public class LoginTest extends BaseTest {
 	}
 	
 	@Test(priority = 1, dataProvider = "loginData")
-	public void doLoginAndLogoutTest(String username, String password, String isValid) {
-		System.out.println("Logging with username : " + username);
+	public void doLoginAndLogoutTest(String username, String password, String status) {
+		System.out.println("Logging with username : " + username + ", password : " + password);
 		HomePage homepage = page.getInstance(LoginPage.class).doLogin(username, password);
-		
-		if(isValid.equals("TRUE")) {
-			String homeheader = homepage.getHomePageTitle();
-			System.out.println("Home Header: "+ homeheader);
-			Assert.assertEquals(homeheader, Constants.HeaderTitles.HOMEPAGE_HEADER);
 
-			page.getInstance(HomePage.class).doLogout();
-			Assert.assertTrue(page.getInstance(LoginPage.class).verifyLoginPage());
-		} else {
-			String errorMessage  = page.getInstance(LoginPage.class).getInvalidLoginError();
-			System.out.println("Error Message: "+ errorMessage);
-			Assert.assertEquals(errorMessage, Constants.ErrorMessages.INVALID_LOGIN_ERROR_MESSAGE);
+		switch (status) {
+			case "VALID":
+				String homeheader = homepage.getHomePageTitle();
+				System.out.println("Home Header: " + homeheader);
+				Assert.assertEquals(homeheader, Constants.HeaderTitles.HOMEPAGE_HEADER);
+
+				page.getInstance(HomePage.class).doLogout();
+				Assert.assertTrue(page.getInstance(LoginPage.class).verifyLoginPage());
+				break;
+			case "INVALID": {
+				String errorMessage = page.getInstance(LoginPage.class).getInvalidLoginError();
+				System.out.println("Error Message: " + errorMessage);
+				Assert.assertEquals(errorMessage, Constants.ErrorMessages.INVALID_LOGIN_ERROR_MESSAGE);
+				break;
+			}
+			case "BLANK_USERNAME": {
+				String errorMessage = page.getInstance(LoginPage.class).getInvalidLoginError();
+				System.out.println("Error Message: " + errorMessage);
+				Assert.assertEquals(errorMessage, Constants.ErrorMessages.BLANK_USERNAME_ERROR_MESSAGE);
+				break;
+			}
+			case "BLANK_PASSWORD": {
+				String errorMessage = page.getInstance(LoginPage.class).getInvalidLoginError();
+				System.out.println("Error Message: " + errorMessage);
+				Assert.assertEquals(errorMessage, Constants.ErrorMessages.BLANK_PASSWORD_ERROR_MESSAGE);
+				break;
+			}
 		}
 	}
 

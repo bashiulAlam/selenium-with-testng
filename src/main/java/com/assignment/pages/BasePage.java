@@ -28,7 +28,7 @@ public class BasePage extends Page {
 			element = driver.findElement(locator);
 			return element;
 		}catch(Exception e) {
-			System.out.println("Some Error Occured while creating element"+locator.toString());
+			System.out.println("Some Error Occured while locating element" + locator.toString());
 			e.printStackTrace();
 		}
 		

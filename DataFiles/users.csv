@@ -1,2 +1,4 @@
-standard_user,secret_sauce,TRUE
-standard_user,secret_sauce_false,FALSE
+standard_user,secret_sauce,VALID
+standard_user,secret_sauce_false,INVALID
+,password,BLANK_USERNAME
+user,,BLANK_PASSWORD

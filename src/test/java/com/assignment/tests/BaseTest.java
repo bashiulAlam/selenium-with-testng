@@ -2,12 +2,18 @@ package com.assignment.tests;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.time.Duration;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import com.opencsv.exceptions.CsvException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
@@ -33,29 +39,35 @@ public class BaseTest {
 	@Parameters(value= {"browser"})
 	public void setupTest(String browser) {
 		if(browser.equals("chrome")) {
-			/*DesiredCapabilities desiredCapabilities = DesiredCapabilities.chrome();
+			Map<String, Object> prefs = new HashMap<String, Object>();
+			prefs.put("profile.default_content_setting_values.notifications", 2);
 			ChromeOptions chromeOptions = new ChromeOptions();
-			chromeOptions.addArguments("incognito");
-			desiredCapabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);*/
-
+			chromeOptions.setExperimentalOption("prefs", prefs);
+			chromeOptions.addArguments("--disable-dev-shm-usage");
+			chromeOptions.addArguments("--no-sandbox");
+			chromeOptions.addArguments("--headless");
+			chromeOptions.addArguments("--remote-allow-origins=*");
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
-			driver.manage().window().maximize();
+			driver = new ChromeDriver(chromeOptions);
 		}
 		
 		else if(browser.equals("firefox")) {
+			FirefoxBinary firefoxBinary = new FirefoxBinary();
+			firefoxBinary.addCommandLineOptions("--headless");
+			FirefoxOptions firefoxOptions = new FirefoxOptions();
+			firefoxOptions.setBinary(firefoxBinary);
 			WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver();
+			driver = new FirefoxDriver(firefoxOptions);
 		}
 		else {
 			System.out.println("No Browser is Defined in xml");
 		}
 
 		// Default value 0 Seconds implicit timeout
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
 		// Default value 300 Seconds pageload timeout
-		driver.manage().timeouts().pageLoadTimeout(300, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(300));
 
 		driver.get(this.url);
 

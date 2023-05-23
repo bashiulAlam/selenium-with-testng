@@ -2,25 +2,22 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="Selenium Automation Framework" thread-count="1"
-	parallel="tests" verbose="1">
+       parallel="tests" verbose="1">
 
-	<test name="Login Page Test - Chrome" parallel="methods"
-		thread-count="1">
-		<parameter name="browser" value="chrome" />
-		<classes>
-			<class name="com.assignment.tests.LoginTest" />
-		</classes>
-	</test>
+    <test name="Login Page Test - Chrome" parallel="methods"
+          thread-count="1">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.assignment.tests.LoginTest"/>
+        </classes>
+    </test>
 
-		<!--
+    <test name="Login Page Test - Firefox" parallel="methods"
+          thread-count="1">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="com.assignment.tests.LoginTest"/>
+        </classes>
+    </test>
 
-            <test name="Balance Page Test - firefox" parallel="methods"
-                thread-count="1">
-                <parameter name="browser" value="firefox" />
-                <classes>
-                    <class name="BalanceTest" />
-                </classes>
-            </test>
-
-            -->
 </suite>

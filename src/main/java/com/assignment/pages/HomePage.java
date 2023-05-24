@@ -8,7 +8,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
 
 public class HomePage extends BasePage{
 	private final By hamburgerIcon = By.xpath("//button[@id='react-burger-menu-btn']");

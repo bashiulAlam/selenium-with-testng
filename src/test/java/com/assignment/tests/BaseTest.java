@@ -1,13 +1,9 @@
 package com.assignment.tests;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.concurrent.TimeUnit;
 
-import com.opencsv.exceptions.CsvException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -16,12 +12,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 
 import com.assignment.pages.BasePage;
 import com.assignment.pages.Page;
-import com.assignment.utils.ReadCSVFile;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -63,10 +57,10 @@ public class BaseTest {
 			System.out.println("No Browser is Defined in xml");
 		}
 
-		// Default value 0 Seconds implicit timeout
+		// Default value 30 Seconds implicit timeout
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
-		// Default value 300 Seconds pageload timeout
+		// Default value 300 Seconds page load timeout
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(300));
 
 		driver.get(this.url);

@@ -1,8 +1,6 @@
 package com.assignment.utils;
 
 import java.io.*;
-import java.util.Arrays;
-import java.util.List;
 
 import com.opencsv.CSVReader;
 import com.opencsv.exceptions.CsvException;

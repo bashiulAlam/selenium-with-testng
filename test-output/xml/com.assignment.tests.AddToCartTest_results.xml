@@ -1,37 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Login Page Test - Chrome"
+<testsuite name="Add to Cart Test - Chrome"
            tests="7"
            failures="0"
            errors="0"
            skipped="0"
-           time="14.518">
+           time="14.650">
     <properties></properties>
 
 
 
             <testcase
                 name="loginTest"
-                time="1.029"
+                time="5.005"
                 classname="com.assignment.tests.AddToCartTest">
             </testcase>
             <testcase
                 name="loginTest"
-                time="5.281"
-                classname="com.assignment.tests.AddToCartTest">
-            </testcase>
-            <testcase
-                name="logoutTest"
-                time="1.204"
-                classname="com.assignment.tests.AddToCartTest">
-            </testcase>
-            <testcase
-                name="loginTest"
-                time="2.237"
-                classname="com.assignment.tests.AddToCartTest">
-            </testcase>
-            <testcase
-                name="addToCartTest"
-                time="0.819"
+                time="1.056"
                 classname="com.assignment.tests.AddToCartTest">
             </testcase>
             <testcase
@@ -40,8 +25,23 @@
                 classname="com.assignment.tests.AddToCartTest">
             </testcase>
             <testcase
+                name="loginTest"
+                time="2.191"
+                classname="com.assignment.tests.AddToCartTest">
+            </testcase>
+            <testcase
                 name="checkoutTest"
-                time="3.721"
+                time="3.683"
+                classname="com.assignment.tests.AddToCartTest">
+            </testcase>
+            <testcase
+                name="logoutTest"
+                time="1.572"
+                classname="com.assignment.tests.AddToCartTest">
+            </testcase>
+            <testcase
+                name="addToCartTest"
+                time="0.916"
                 classname="com.assignment.tests.AddToCartTest">
             </testcase>
 </testsuite>

@@ -7,44 +7,55 @@ import com.assignment.pages.LoginPage;
 import com.assignment.utils.ReadCSVFile;
 import com.assignment.utils.Constants;
 import com.opencsv.exceptions.CsvException;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.lang.reflect.Method;
 
 public class AddToCartTest extends BaseTest {
 
-	public AddToCartTest(String url) {
+	public AddToCartTest() {
 		super(Constants.Url.BASE_URL);
+	}
+
+	private static final Logger logger = LogManager.getLogger(AddToCartTest.class.getName());
+
+	@BeforeMethod
+	public void setup(Method method) {
+		logger.info("\n\n============================== Executing test - " + method.getName() + " ==============================\n");
 	}
 	
 	@Test(priority = 0, dataProvider = "loginData")
 	public void loginTest(String username, String password, String status) {
-		System.out.println("Logging in with username : " + username + ", password : " + password);
+		logger.info("Logging in with username : " + username + ", password : " + password);
 		HomePage homepage = page.getInstance(LoginPage.class).doLogin(username, password);
 
 		switch (status) {
 			case "VALID":
 				String homeheader = homepage.getHomePageTitle();
-				System.out.println("Home Header: " + homeheader);
+				logger.info("Home Header: " + homeheader);
 				Assert.assertEquals(homeheader, Constants.HeaderTitles.HOMEPAGE_HEADER);
 				break;
 			case "INVALID": {
 				String errorMessage = page.getInstance(LoginPage.class).getInvalidLoginError();
-				System.out.println("Error Message: " + errorMessage);
+				logger.info("Error Message: " + errorMessage);
 				Assert.assertEquals(errorMessage, Constants.ErrorMessages.INVALID_LOGIN_ERROR_MESSAGE);
 				break;
 			}
 			case "BLANK_USERNAME": {
 				String errorMessage = page.getInstance(LoginPage.class).getInvalidLoginError();
-				System.out.println("Error Message: " + errorMessage);
+				logger.info("Error Message: " + errorMessage);
 				Assert.assertEquals(errorMessage, Constants.ErrorMessages.BLANK_USERNAME_ERROR_MESSAGE);
 				break;
 			}
 			case "BLANK_PASSWORD": {
 				String errorMessage = page.getInstance(LoginPage.class).getInvalidLoginError();
-				System.out.println("Error Message: " + errorMessage);
+				logger.info("Error Message: " + errorMessage);
 				Assert.assertEquals(errorMessage, Constants.ErrorMessages.BLANK_PASSWORD_ERROR_MESSAGE);
 				break;
 			}
@@ -58,7 +69,7 @@ public class AddToCartTest extends BaseTest {
 		Assert.assertTrue(page.getInstance(CommonPage.class).isRemoveButtonVisible());
 
 		int cartItemCount = Integer.parseInt(page.getInstance(HomePage.class).getCartItemNumber());
-		System.out.println("No of items in cart : " + cartItemCount);
+		logger.info("No of items in cart : " + cartItemCount);
 		Assert.assertEquals(cartItemCount, 1);
 	}
 
@@ -66,7 +77,7 @@ public class AddToCartTest extends BaseTest {
 	public void checkoutTest() {
 		page.getInstance(HomePage.class).openCart();
 		String cartItemTitle = page.getInstance(CartPage.class).getItemName();
-		System.out.println("Item found in cart : " + cartItemTitle);
+		logger.info("Item found in cart : " + cartItemTitle);
 		Assert.assertEquals(cartItemTitle, Constants.InventoryNames.BACKPACK_TITLE);
 		Assert.assertTrue(page.getInstance(CommonPage.class).isRemoveButtonVisible());
 
@@ -76,7 +87,7 @@ public class AddToCartTest extends BaseTest {
 
 		page.getInstance(CartPage.class).finishCheckout();
 		String checkoutSuccessMessage = page.getInstance(CartPage.class).getSuccessCheckoutMessage();
-		System.out.println("Checkout success message : " + checkoutSuccessMessage);
+		logger.info("Checkout success message : " + checkoutSuccessMessage);
 		Assert.assertEquals(checkoutSuccessMessage, Constants.Messages.SUCCESSFUL_CHECKOUT_MESSAGE);
 	}
 
@@ -91,5 +102,4 @@ public class AddToCartTest extends BaseTest {
 		ReadCSVFile readCsv = new ReadCSVFile();
 		return readCsv.getCSVContent();
 	}
-
 }

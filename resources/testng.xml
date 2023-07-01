@@ -4,7 +4,7 @@
 <suite name="Selenium Automation Framework" thread-count="1"
        parallel="tests" verbose="1">
 
-    <test name="Login Page Test - Chrome" parallel="methods"
+    <test name="Add to Cart Test - Chrome" parallel="methods"
           thread-count="1">
         <parameter name="browser" value="chrome"/>
         <classes>
@@ -12,12 +12,12 @@
         </classes>
     </test>
 
-    <!--<test name="Login Page Test - Firefox" parallel="methods"
+    <test name="Add to Cart - Firefox" parallel="methods"
           thread-count="1">
         <parameter name="browser" value="firefox"/>
         <classes>
             <class name="com.assignment.tests.AddToCartTest"/>
         </classes>
-    </test>-->
+    </test>
 
 </suite>

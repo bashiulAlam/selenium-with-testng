@@ -1,1 +1,86 @@
-2023-07-01 12:21:53.681 [TestNG-test=Login Page Test - Chrome-1] INFO  com.assignment.tests.BaseTest - Loading URL: https://www.saucedemo.com/ 
+2023-07-01 12:49:32.009 [TestNG-test=Add to Cart Test - Chrome-1] INFO  com.assignment.tests.BaseTest - Chrome driver initiated...
+2023-07-01 12:49:34.361 [TestNG-test=Add to Cart Test - Chrome-1] INFO  com.assignment.tests.BaseTest - Loading URL: https://www.saucedemo.com/ 
+2023-07-01 12:49:34.398 [TestNG-test=Add to Cart Test - Chrome-1] INFO  com.assignment.utils.ReadCSVFile - Row count in CSV file : 4
+2023-07-01 12:49:34.406 [TestNG-test=Add to Cart Test - Chrome-1] INFO  com.assignment.tests.AddToCartTest - 
+
+============================== Executing test - loginTest ==============================
+
+2023-07-01 12:49:34.407 [TestNG-test=Add to Cart Test - Chrome-1] INFO  com.assignment.tests.AddToCartTest - Logging in with username : standard_user, password : secret_sauce_false
+2023-07-01 12:49:39.410 [TestNG-test=Add to Cart Test - Chrome-1] INFO  com.assignment.tests.AddToCartTest - Error Message: Epic sadface: Username and password do not match any user in this service
+2023-07-01 12:49:39.417 [TestNG-test=Add to Cart Test - Chrome-1] INFO  com.assignment.tests.AddToCartTest - 
+
+============================== Executing test - loginTest ==============================
+
+2023-07-01 12:49:39.419 [TestNG-test=Add to Cart Test - Chrome-1] INFO  com.assignment.tests.AddToCartTest - Logging in with username : , password : password
+2023-07-01 12:49:40.474 [TestNG-test=Add to Cart Test - Chrome-1] INFO  com.assignment.tests.AddToCartTest - Error Message: Epic sadface: Username is required
+2023-07-01 12:49:40.476 [TestNG-test=Add to Cart Test - Chrome-1] INFO  com.assignment.tests.AddToCartTest - 
+
+============================== Executing test - loginTest ==============================
+
+2023-07-01 12:49:40.477 [TestNG-test=Add to Cart Test - Chrome-1] INFO  com.assignment.tests.AddToCartTest - Logging in with username : user, password : 
+2023-07-01 12:49:40.702 [TestNG-test=Add to Cart Test - Chrome-1] INFO  com.assignment.tests.AddToCartTest - Error Message: Epic sadface: Password is required
+2023-07-01 12:49:40.708 [TestNG-test=Add to Cart Test - Chrome-1] INFO  com.assignment.tests.AddToCartTest - 
+
+============================== Executing test - loginTest ==============================
+
+2023-07-01 12:49:40.710 [TestNG-test=Add to Cart Test - Chrome-1] INFO  com.assignment.tests.AddToCartTest - Logging in with username : standard_user, password : secret_sauce
+2023-07-01 12:49:42.900 [TestNG-test=Add to Cart Test - Chrome-1] INFO  com.assignment.tests.AddToCartTest - Home Header: Swag Labs
+2023-07-01 12:49:42.908 [TestNG-test=Add to Cart Test - Chrome-1] INFO  com.assignment.tests.AddToCartTest - 
+
+============================== Executing test - addToCartTest ==============================
+
+2023-07-01 12:49:43.825 [TestNG-test=Add to Cart Test - Chrome-1] INFO  com.assignment.tests.AddToCartTest - No of items in cart : 1
+2023-07-01 12:49:43.829 [TestNG-test=Add to Cart Test - Chrome-1] INFO  com.assignment.tests.AddToCartTest - 
+
+============================== Executing test - checkoutTest ==============================
+
+2023-07-01 12:49:44.479 [TestNG-test=Add to Cart Test - Chrome-1] INFO  com.assignment.tests.AddToCartTest - Item found in cart : Sauce Labs Backpack
+2023-07-01 12:49:47.512 [TestNG-test=Add to Cart Test - Chrome-1] INFO  com.assignment.tests.AddToCartTest - Checkout success message : Thank you for your order!
+2023-07-01 12:49:47.516 [TestNG-test=Add to Cart Test - Chrome-1] INFO  com.assignment.tests.AddToCartTest - 
+
+============================== Executing test - logoutTest ==============================
+
+2023-07-01 12:49:49.204 [TestNG-test=Add to Cart Test - Chrome-1] INFO  com.assignment.tests.BaseTest - Tear down method executed...
+2023-07-01 12:49:51.021 [TestNG-test=Add to Cart - Firefox-1] INFO  com.assignment.tests.BaseTest - Firefox driver initiated...
+2023-07-01 12:49:51.850 [TestNG-test=Add to Cart - Firefox-1] INFO  com.assignment.tests.BaseTest - Loading URL: https://www.saucedemo.com/ 
+2023-07-01 12:49:51.856 [TestNG-test=Add to Cart - Firefox-1] INFO  com.assignment.utils.ReadCSVFile - Row count in CSV file : 4
+2023-07-01 12:49:51.860 [TestNG-test=Add to Cart - Firefox-1] INFO  com.assignment.tests.AddToCartTest - 
+
+============================== Executing test - loginTest ==============================
+
+2023-07-01 12:49:51.861 [TestNG-test=Add to Cart - Firefox-1] INFO  com.assignment.tests.AddToCartTest - Logging in with username : standard_user, password : secret_sauce_false
+2023-07-01 12:49:53.064 [TestNG-test=Add to Cart - Firefox-1] INFO  com.assignment.tests.AddToCartTest - Error Message: Epic sadface: Username and password do not match any user in this service
+2023-07-01 12:49:53.067 [TestNG-test=Add to Cart - Firefox-1] INFO  com.assignment.tests.AddToCartTest - 
+
+============================== Executing test - loginTest ==============================
+
+2023-07-01 12:49:53.069 [TestNG-test=Add to Cart - Firefox-1] INFO  com.assignment.tests.AddToCartTest - Logging in with username : , password : password
+2023-07-01 12:49:54.005 [TestNG-test=Add to Cart - Firefox-1] INFO  com.assignment.tests.AddToCartTest - Error Message: Epic sadface: Username is required
+2023-07-01 12:49:54.007 [TestNG-test=Add to Cart - Firefox-1] INFO  com.assignment.tests.AddToCartTest - 
+
+============================== Executing test - loginTest ==============================
+
+2023-07-01 12:49:54.008 [TestNG-test=Add to Cart - Firefox-1] INFO  com.assignment.tests.AddToCartTest - Logging in with username : user, password : 
+2023-07-01 12:49:54.928 [TestNG-test=Add to Cart - Firefox-1] INFO  com.assignment.tests.AddToCartTest - Error Message: Epic sadface: Password is required
+2023-07-01 12:49:54.936 [TestNG-test=Add to Cart - Firefox-1] INFO  com.assignment.tests.AddToCartTest - 
+
+============================== Executing test - loginTest ==============================
+
+2023-07-01 12:49:54.936 [TestNG-test=Add to Cart - Firefox-1] INFO  com.assignment.tests.AddToCartTest - Logging in with username : standard_user, password : secret_sauce
+2023-07-01 12:49:55.739 [TestNG-test=Add to Cart - Firefox-1] INFO  com.assignment.tests.AddToCartTest - Home Header: Swag Labs
+2023-07-01 12:49:55.744 [TestNG-test=Add to Cart - Firefox-1] INFO  com.assignment.tests.AddToCartTest - 
+
+============================== Executing test - addToCartTest ==============================
+
+2023-07-01 12:49:56.021 [TestNG-test=Add to Cart - Firefox-1] INFO  com.assignment.tests.AddToCartTest - No of items in cart : 1
+2023-07-01 12:49:56.024 [TestNG-test=Add to Cart - Firefox-1] INFO  com.assignment.tests.AddToCartTest - 
+
+============================== Executing test - checkoutTest ==============================
+
+2023-07-01 12:49:56.264 [TestNG-test=Add to Cart - Firefox-1] INFO  com.assignment.tests.AddToCartTest - Item found in cart : Sauce Labs Backpack
+2023-07-01 12:49:57.048 [TestNG-test=Add to Cart - Firefox-1] INFO  com.assignment.tests.AddToCartTest - Checkout success message : Thank you for your order!
+2023-07-01 12:49:57.052 [TestNG-test=Add to Cart - Firefox-1] INFO  com.assignment.tests.AddToCartTest - 
+
+============================== Executing test - logoutTest ==============================
+
+2023-07-01 12:49:58.033 [TestNG-test=Add to Cart - Firefox-1] INFO  com.assignment.tests.BaseTest - Tear down method executed...

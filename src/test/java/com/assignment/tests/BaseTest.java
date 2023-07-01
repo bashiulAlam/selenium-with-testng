@@ -48,6 +48,8 @@ public class BaseTest {
 			chromeOptions.addArguments("--remote-allow-origins=*");
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(chromeOptions);
+
+			logger.info("Chrome driver initiated...");
 		}
 		
 		else if(browser.equals("firefox")) {
@@ -57,6 +59,8 @@ public class BaseTest {
 			firefoxOptions.setBinary(firefoxBinary);
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver(firefoxOptions);
+
+			logger.info("Firefox driver initiated...");
 		}
 		else {
 			logger.info("No Browser is Defined in xml");
@@ -78,6 +82,7 @@ public class BaseTest {
 	@AfterClass
 	public void tearDown() {
 		driver.quit();
+		logger.info("Tear down method executed...");
 	}
 
 }

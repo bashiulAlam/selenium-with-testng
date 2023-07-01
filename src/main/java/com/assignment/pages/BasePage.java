@@ -1,5 +1,7 @@
 package com.assignment.pages;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,6 +11,8 @@ public class BasePage extends Page {
 	public BasePage(WebDriver driver) {
 		super(driver);
 	}
+
+	private static final Logger logger = LogManager.getLogger(BasePage.class.getName());
 
 	@Override
 	public String getPageTitle() {
@@ -28,7 +32,7 @@ public class BasePage extends Page {
 			element = driver.findElement(locator);
 			return element;
 		}catch(Exception e) {
-			System.out.println("Some Error Occured while locating element" + locator.toString());
+			logger.error("Some Error Occured while locating element" + locator.toString());
 			e.printStackTrace();
 		}
 		

@@ -95,6 +95,7 @@ public class AddToCartTest extends BaseTest {
 	public void logoutTest() {
 		page.getInstance(HomePage.class).doLogout();
 		Assert.assertTrue(page.getInstance(LoginPage.class).verifyLoginPage());
+		logger.info("logout test executed...");
 	}
 
 	@DataProvider(name="loginData")

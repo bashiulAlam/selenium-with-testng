@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Add to Cart Test - Chrome"
+<testsuite name="Add to Cart - Firefox"
            tests="7"
            failures="0"
            errors="0"
            skipped="0"
-           time="14.650">
+           time="5.496">
     <properties></properties>
 
 
 
             <testcase
                 name="loginTest"
-                time="5.005"
+                time="0.935"
                 classname="com.assignment.tests.AddToCartTest">
             </testcase>
             <testcase
                 name="loginTest"
-                time="1.056"
-                classname="com.assignment.tests.AddToCartTest">
-            </testcase>
-            <testcase
-                name="loginTest"
-                time="0.227"
-                classname="com.assignment.tests.AddToCartTest">
-            </testcase>
-            <testcase
-                name="loginTest"
-                time="2.191"
+                time="0.901"
                 classname="com.assignment.tests.AddToCartTest">
             </testcase>
             <testcase
                 name="checkoutTest"
-                time="3.683"
+                time="1.021"
                 classname="com.assignment.tests.AddToCartTest">
             </testcase>
             <testcase
                 name="logoutTest"
-                time="1.572"
+                time="0.535"
+                classname="com.assignment.tests.AddToCartTest">
+            </testcase>
+            <testcase
+                name="loginTest"
+                time="0.742"
                 classname="com.assignment.tests.AddToCartTest">
             </testcase>
             <testcase
                 name="addToCartTest"
-                time="0.916"
+                time="0.269"
+                classname="com.assignment.tests.AddToCartTest">
+            </testcase>
+            <testcase
+                name="loginTest"
+                time="1.093"
                 classname="com.assignment.tests.AddToCartTest">
             </testcase>
 </testsuite>

@@ -13,7 +13,7 @@ public class ReadCSVFile {
 	private static final Logger logger = LogManager.getLogger(ReadCSVFile.class.getName());
 
 	public int getRowCount() throws IOException, CsvValidationException {
-		CSVReader reader = new CSVReader(new FileReader("./Datafiles/users.csv"));
+		CSVReader reader = new CSVReader(new FileReader(ReadConfigUtil.readProperty("USER_CREDENTIALS_FILE_PATH")));
 		String[] input;
 		int count = 0;
 		while ((input = reader.readNext()) != null) {
@@ -25,7 +25,7 @@ public class ReadCSVFile {
 	}
 
 	public Object[][] getCSVContent() throws IOException, CsvValidationException {
-		CSVReader reader = new CSVReader(new FileReader("./Datafiles/users.csv"));
+		CSVReader reader = new CSVReader(new FileReader(ReadConfigUtil.readProperty("USER_CREDENTIALS_FILE_PATH")));
 		String[] input;
 		int rowCount = getRowCount();
 		Object[][] credentials = new String[rowCount][3];

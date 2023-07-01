@@ -4,29 +4,29 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="11.216">
+           time="10.374">
     <properties></properties>
 
 
 
             <testcase
                 name="doLoginAndLogoutTest"
-                time="1.877"
+                time="6.716"
                 classname="com.assignment.tests.LoginTest">
             </testcase>
             <testcase
                 name="doLoginAndLogoutTest"
-                time="0.991"
+                time="1.198"
                 classname="com.assignment.tests.LoginTest">
             </testcase>
             <testcase
                 name="doLoginAndLogoutTest"
-                time="2.145"
+                time="0.803"
                 classname="com.assignment.tests.LoginTest">
             </testcase>
             <testcase
                 name="doLoginAndLogoutTest"
-                time="6.203"
+                time="1.657"
                 classname="com.assignment.tests.LoginTest">
             </testcase>
 </testsuite>

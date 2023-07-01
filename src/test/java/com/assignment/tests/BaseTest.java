@@ -10,6 +10,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -20,6 +22,8 @@ import com.assignment.pages.Page;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
+	private static Logger logger = LoggerFactory.getLogger(BaseTest.class);
+	
 	WebDriver driver;
 	public Page page;
 	
@@ -54,7 +58,7 @@ public class BaseTest {
 			driver = new FirefoxDriver(firefoxOptions);
 		}
 		else {
-			System.out.println("No Browser is Defined in xml");
+			logger.info("No Browser is Defined in xml");
 		}
 
 		// Default value 30 Seconds implicit timeout
@@ -65,7 +69,7 @@ public class BaseTest {
 
 		driver.get(this.url);
 
-		System.out.println("URL: " + this.url);
+		logger.info("Loading URL: " + this.url);
 
 		page = new BasePage(driver);
 	}

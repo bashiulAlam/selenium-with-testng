@@ -2,7 +2,7 @@ package com.assignment.utils;
 
 public class Constants {
     public static class Url {
-        public static final String BASE_URL = "https://www.saucedemo.com/";
+        public static final String BASE_URL = ReadConfigUtil.readProperty("BASE_URL");
     }
 
     public static class HeaderTitles {

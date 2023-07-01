@@ -4,13 +4,14 @@ import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -22,7 +23,7 @@ import com.assignment.pages.Page;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
-	private static final Logger logger = LoggerFactory.getLogger(BaseTest.class);
+	private static final Logger logger = LogManager.getLogger(BaseTest.class.getName());
 	
 	WebDriver driver;
 	public Page page;

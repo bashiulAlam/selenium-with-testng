@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Login Page Test - Chrome"
+           tests="7"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="14.518">
+    <properties></properties>
+
+
+
+            <testcase
+                name="loginTest"
+                time="1.029"
+                classname="com.assignment.tests.AddToCartTest">
+            </testcase>
+            <testcase
+                name="loginTest"
+                time="5.281"
+                classname="com.assignment.tests.AddToCartTest">
+            </testcase>
+            <testcase
+                name="logoutTest"
+                time="1.204"
+                classname="com.assignment.tests.AddToCartTest">
+            </testcase>
+            <testcase
+                name="loginTest"
+                time="2.237"
+                classname="com.assignment.tests.AddToCartTest">
+            </testcase>
+            <testcase
+                name="addToCartTest"
+                time="0.819"
+                classname="com.assignment.tests.AddToCartTest">
+            </testcase>
+            <testcase
+                name="loginTest"
+                time="0.227"
+                classname="com.assignment.tests.AddToCartTest">
+            </testcase>
+            <testcase
+                name="checkoutTest"
+                time="3.721"
+                classname="com.assignment.tests.AddToCartTest">
+            </testcase>
+</testsuite>

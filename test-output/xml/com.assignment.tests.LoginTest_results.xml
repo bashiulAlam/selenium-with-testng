@@ -1,32 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Login Page Test - Chrome"
-           tests="4"
+           tests="7"
            failures="0"
            errors="0"
            skipped="0"
-           time="10.374">
+           time="13.849">
     <properties></properties>
 
 
 
             <testcase
-                name="doLoginAndLogoutTest"
-                time="6.716"
-                classname="com.assignment.tests.LoginTest">
+                name="addToCartTest"
+                time="0.785"
+                classname="com.assignment.tests.AddToCartTest">
             </testcase>
             <testcase
-                name="doLoginAndLogoutTest"
-                time="1.198"
-                classname="com.assignment.tests.LoginTest">
+                name="loginTest"
+                time="0.216"
+                classname="com.assignment.tests.AddToCartTest">
             </testcase>
             <testcase
-                name="doLoginAndLogoutTest"
-                time="0.803"
-                classname="com.assignment.tests.LoginTest">
+                name="checkoutTest"
+                time="3.826"
+                classname="com.assignment.tests.AddToCartTest">
             </testcase>
             <testcase
-                name="doLoginAndLogoutTest"
-                time="1.657"
-                classname="com.assignment.tests.LoginTest">
+                name="logoutTest"
+                time="1.186"
+                classname="com.assignment.tests.AddToCartTest">
+            </testcase>
+            <testcase
+                name="loginTest"
+                time="0.949"
+                classname="com.assignment.tests.AddToCartTest">
+            </testcase>
+            <testcase
+                name="loginTest"
+                time="2.070"
+                classname="com.assignment.tests.AddToCartTest">
+            </testcase>
+            <testcase
+                name="loginTest"
+                time="4.817"
+                classname="com.assignment.tests.AddToCartTest">
             </testcase>
 </testsuite>

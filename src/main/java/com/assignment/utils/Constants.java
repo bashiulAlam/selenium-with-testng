@@ -14,4 +14,18 @@ public class Constants {
         public static final String BLANK_USERNAME_ERROR_MESSAGE = "Epic sadface: Username is required";
         public static final String BLANK_PASSWORD_ERROR_MESSAGE = "Epic sadface: Password is required";
     }
+
+    public static class InventoryNames {
+        public static final String BACKPACK_TITLE = "Sauce Labs Backpack";
+    }
+
+    public static class Messages {
+        public static final String SUCCESSFUL_CHECKOUT_MESSAGE = "Thank you for your order!";
+    }
+
+    public static class CheckoutInfo {
+        public static final String FIRST_NAME = "A";
+        public static final String LAST_NAME = "B";
+        public static final String POST_CODE = "111";
+    }
 }

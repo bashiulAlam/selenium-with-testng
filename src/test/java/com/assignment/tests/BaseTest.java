@@ -22,7 +22,7 @@ import com.assignment.pages.Page;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
-	private static Logger logger = LoggerFactory.getLogger(BaseTest.class);
+	private static final Logger logger = LoggerFactory.getLogger(BaseTest.class);
 	
 	WebDriver driver;
 	public Page page;
